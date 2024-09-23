@@ -1,0 +1,75 @@
+.main__element{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contactform__container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 6px;
+}
+.contactform__headline{
+    color: #515e5f;
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+.contactform__name{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.contactform__firstname, .contactform__lastname{
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+.contactform__email{
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+.contactform__query{
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+.contactform__querybox{
+    display: flex;
+    justify-content: space-between;
+}
+.contactform__queryfirst, .contactform__querysecond{
+    display: flex;
+    border: 1px solid;
+    gap: 10px;
+}
+.contactform__message{
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+label, legend{
+    font-size: 0.8rem;
+}
+input[name]{
+    border-radius: 4px;
+    border: 1px solid #d0d5d4;
+    padding: 0.5rem 0.8rem;
+}
+textarea{
+    padding: 0.5rem 0.8rem;
+    border-radius: 4px;
+    border: 1px solid #d0d5d4;
+    resize: none;
+}
+button[type="submit"]{
+    font-family: inherit;
+    background-color: #0c7d69;
+    color: #c6eae8;
+    border-radius: 4px;
+    padding: 0.6rem;
+    border: none;
+}

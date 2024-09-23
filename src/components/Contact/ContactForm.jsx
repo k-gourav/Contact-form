@@ -1,3 +1,4 @@
+// import ContactConfirm from '../ContactConfirm/ContactConfirm'
 import styles from "./ContactForm.module.css";
 
 const ContactForm = () => {
@@ -8,7 +9,7 @@ const ContactForm = () => {
         {/* Input for namefield */}
         <div className={styles.contactform__name}>
           <div className={styles.contactform__firstname}>
-            <label htmlFor="firstname">First Name</label>
+            <label htmlFor="firstname">First Name<span id={styles.form__required}> *</span></label>
             <input
               type="text"
               name="firstname"
@@ -17,7 +18,7 @@ const ContactForm = () => {
             />
           </div>
           <div className={styles.contactform__lastname}>
-            <label htmlFor="lastname">Last Name</label>
+            <label htmlFor="lastname">Last Name<span id={styles.form__required}> *</span></label>
             <input
               type="text"
               name="lastname"
@@ -28,7 +29,7 @@ const ContactForm = () => {
         </div>
 
         <div className={styles.contactform__email}>
-          <label htmlFor="lastname">Email Address</label>
+          <label htmlFor="lastname">Email Address<span id={styles.form__required}> *</span></label>
           <input
             type="email"
             name="email"
@@ -38,8 +39,9 @@ const ContactForm = () => {
         </div>
 
         <div className={styles.contactform__query}>
-          <legend>Query Type</legend>
-
+          <legend>Query Type<span id={styles.form__required}> *</span></legend>
+          
+          <div className={styles.contactform__querybox}>
           <div className={styles.contactform__queryfirst}>
             <input type="radio" name="query" value="General Enquiry" />
             <label htmlFor="generalenquiry">General Enquiry</label>
@@ -49,13 +51,16 @@ const ContactForm = () => {
             <input type="radio" name="query" value="Support Request" />
             <label htmlFor="supportrequest">Support Request</label>
           </div>
+          </div>
+
         </div>
 
         <div className={styles.contactform__message}>
-          <label htmlFor="message">Message</label>
-          <input
+          <label htmlFor="message">Message<span id={styles.form__required}> *</span></label>
+          <textarea
             type="text"
             name="message"
+            rows="3"
             aria-label="Type your message"
             required
           />
@@ -69,7 +74,7 @@ const ContactForm = () => {
             required
           />
           <label htmlFor="confirm">
-            I hereby consent to being contacted by the team
+            I hereby consent to being contacted by the team<span id={styles.form__required}> *</span>
           </label>
         </div>
         <button type="submit">Submit</button>
