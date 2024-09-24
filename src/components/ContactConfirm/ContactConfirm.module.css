@@ -1,0 +1,17 @@
+.confirm__container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #2a4244f4;
+    border-radius: 8px;
+    color: #fff;
+    padding: 1.5rem;
+}
+.confirm__title{
+    display: flex;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+}
+.confirm__body{
+    font-size: 0.9rem;
+}

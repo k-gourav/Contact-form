@@ -1,9 +1,10 @@
-// import ContactConfirm from '../ContactConfirm/ContactConfirm'
+import { useForm } from "react-hook-form";
 import { useState } from "react";
 import styles from "./ContactForm.module.css";
 
 const ContactForm = () => {
   const [isChecked, setIsChecked] = useState(null);
+  const form = useForm();
 
   return (
     <main className={styles.main__element}>
