@@ -1,7 +1,10 @@
 // import ContactConfirm from '../ContactConfirm/ContactConfirm'
+import { useState } from "react";
 import styles from "./ContactForm.module.css";
 
 const ContactForm = () => {
+  const [isChecked, setIsChecked] = useState(null);
+
   return (
     <main className={styles.main__element}>
       <div className={styles.contactform__container}>
@@ -43,12 +46,12 @@ const ContactForm = () => {
           
           <div className={styles.contactform__querybox}>
           <div className={styles.contactform__queryfirst}>
-            <input type="radio" name="query" value="General Enquiry" />
+            <input type="radio" name="query" value="General Enquiry" checked={isChecked} onChange={(e) => setIsChecked(e.target.value === "General Enquiry")} />
             <label htmlFor="generalenquiry">General Enquiry</label>
           </div>
 
           <div className={styles.contactform__querysecond}>
-            <input type="radio" name="query" value="Support Request" />
+            <input type="radio" name="query" value="Support Request" checked={!isChecked} onChange={(e) => setIsChecked(e.target.value === "General Enquiry")} />
             <label htmlFor="supportrequest">Support Request</label>
           </div>
           </div>
