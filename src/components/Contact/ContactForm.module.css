@@ -120,9 +120,16 @@ button[type="submit"]:hover {
   background-color: #118e77;
 }
 @media screen and (max-width: 756px) {
+    .contactform__container{
+        width: 92%;
+    }
   .contactform__name {
     flex-direction: column;
   }
+  .contactform__firstname,
+.contactform__lastname{
+    width: 100%;
+}
   .contactform__querybox {
     flex-direction: column;
     gap: 0.8rem;
