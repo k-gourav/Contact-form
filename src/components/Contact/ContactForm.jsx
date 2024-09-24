@@ -4,7 +4,7 @@ import styles from "./ContactForm.module.css";
 
 const ContactForm = () => {
   const [isChecked, setIsChecked] = useState(null);
-  const form = useForm();
+  // const form = useForm();
 
   return (
     <main className={styles.main__element}>

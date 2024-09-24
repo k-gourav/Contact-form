@@ -1,122 +1,129 @@
-.main__element{
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.main__element {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#form__required{
-    color:#7a958c;
+#form__required {
+  color: #7a958c;
 }
-.contactform__container{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    background-color: #fff;
-    padding: 1.5rem;
-    border-radius: 6px;
-    box-shadow: rgba(111, 155, 133, 0.186) 0px 8px 24px;
+.contactform__container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 6px;
+  box-shadow: rgba(111, 155, 133, 0.186) 0px 8px 24px;
 }
-.contactform__headline{
-    color: #324544;
-    font-size: 1.7rem;
-    font-weight: 700;
-    letter-spacing: -0.02rem;
+.contactform__headline {
+  color: #324544;
+  font-size: 1.7rem;
+  font-weight: 700;
+  letter-spacing: -0.02rem;
 }
-.contactform__name{
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem;
+.contactform__name {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
 }
-.contactform__firstname, .contactform__lastname{
-    display: flex;
-    flex-direction: column;
-    gap: 0.6rem;
+.contactform__firstname,
+.contactform__lastname {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
 }
-.contactform__email{
-    display: flex;
-    flex-direction: column;
-    gap: 0.6rem;
+.contactform__email {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
 }
-.contactform__query{
-    display: flex;
-    flex-direction: column;
-    gap: 0.6rem;
+.contactform__query {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
 }
-.contactform__querybox{
-    display: flex;
-    justify-content: space-between;
+.contactform__querybox {
+  display: flex;
+  justify-content: space-between;
 }
-.contactform__queryfirst, .contactform__querysecond{
-    display: flex;
-    border: 1px solid;
-    gap: 10px;
-    padding: 0.6rem 0.8rem;
-    border-radius: 4px;
-    border: 1px solid #d0d5d4;
-    width: 48%;
-    cursor: pointer;
+.contactform__queryfirst,
+.contactform__querysecond {
+  display: flex;
+  border: 1px solid;
+  gap: 10px;
+  padding: 0.6rem 0.8rem;
+  border-radius: 4px;
+  border: 1px solid #d0d5d4;
+  width: 48%;
+  cursor: pointer;
 }
-.contactform__message{
-    display: flex;
-    flex-direction: column;
-    gap: 0.6rem;
+.contactform__message {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
 }
-.contactform__confirm{
-    display: flex;
-    align-items: center;
-    gap: 0.7rem;
-    cursor: pointer;
+.contactform__confirm {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  cursor: pointer;
 }
 input[type="checkbox"] {
-    border-radius: none;
-    accent-color: #128570 !important;
+  border-radius: none;
+  accent-color: #128570 !important;
 }
-input[type="radio"]{
-    accent-color: #0c7d69;
+input[type="radio"] {
+  accent-color: #0c7d69;
 }
 /* input[type="radio"]:checked + label {
     background-color: #e4f4e4;
 } */
-label, legend{
-    font-size: 0.8rem;
-    color: #3c4941;
+label,
+legend {
+  font-size: 0.8rem;
+  color: #3c4941;
 }
-input[name]{
-    border-radius: 4px;
-    border: 1px solid #d0d5d4;
-    padding: 0.5rem 0.8rem;
-    outline: none;
-    cursor: pointer;
+input[name] {
+  border-radius: 4px;
+  border: 1px solid #d0d5d4;
+  padding: 0.5rem 0.8rem;
+  outline: none;
+  cursor: pointer;
 }
-input[name]:focus, textarea:focus{
-    border: 1px solid #648c84;
+input[name]:focus,
+textarea:focus {
+  border: 1px solid #648c84;
 }
-textarea{
-    padding: 0.5rem 0.8rem;
-    border-radius: 4px;
-    border: 1px solid #d0d5d4;
-    resize: none;
-    outline: none;
+textarea {
+  padding: 0.5rem 0.8rem;
+  border-radius: 4px;
+  border: 1px solid #d0d5d4;
+  resize: none;
+  outline: none;
 }
-button[type="submit"]{
-    font-family: inherit;
-    background-color: #0c7d69;
-    color: #ffffffe9;
-    border-radius: 4px;
-    padding: 0.6rem;
-    border: none;
-    cursor: pointer;
+button[type="submit"] {
+  font-family: inherit;
+  background-color: #0c7d69;
+  color: #ffffffe9;
+  border-radius: 4px;
+  padding: 0.6rem;
+  border: none;
+  cursor: pointer;
 }
-button[type="submit"]:hover{
-    background-color: #118e77;
+button[type="submit"]:hover {
+  background-color: #118e77;
 }
 @media screen and (max-width: 756px) {
-    .contactform__name{
-        flex-direction: column;
-    }
-    .contactform__querybox{
-        flex-direction: column;
-        gap: 0.8rem;
-    }
-    
+  .contactform__name {
+    flex-direction: column;
+  }
+  .contactform__querybox {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  .contactform__queryfirst,
+  .contactform__querysecond {
+    width: 100%;
+  }
 }
