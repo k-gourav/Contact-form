@@ -10,6 +10,7 @@
 .contactform__container {
   display: flex;
   flex-direction: column;
+  width: 32%;
   gap: 1rem;
   background-color: #fff;
   padding: 1.5rem;
@@ -31,6 +32,7 @@
 .contactform__lastname {
   display: flex;
   flex-direction: column;
+  width: 48%;
   gap: 0.6rem;
 }
 .contactform__email {
@@ -45,7 +47,8 @@
 }
 .contactform__querybox {
   display: flex;
-  justify-content: space-between;
+  gap: 0.6rem;
+  justify-content: space-around;
 }
 .contactform__queryfirst,
 .contactform__querysecond {
