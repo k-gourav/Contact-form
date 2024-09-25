@@ -151,4 +151,7 @@ button[type="submit"]:hover {
   .contactform__querysecond {
     width: 100%;
   }
+  .contactform__confirminput label{
+    width: 75%;
+  }
 }
