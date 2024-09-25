@@ -68,10 +68,16 @@
 }
 .contactform__confirm {
   display: flex;
-  align-items: center;
-  gap: 0.7rem;
+  flex-direction: column;
+  gap: 0.6rem;
   cursor: pointer;
 }
+.contactform__confirminput{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 input[type="checkbox"] {
   border-radius: none;
   accent-color: #128570 !important;
@@ -118,6 +124,10 @@ button[type="submit"] {
 }
 button[type="submit"]:hover {
   background-color: #118e77;
+}
+.error__message{
+  color: #d7767c;
+  font-size: 0.8rem;
 }
 @media screen and (max-width: 756px) {
     .contactform__container{

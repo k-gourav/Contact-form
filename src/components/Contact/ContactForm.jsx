@@ -26,7 +26,7 @@ const ContactForm = () => {
               {...register("firstname", { required: "This field is required" })}
               required
             />
-            {errors.firstname && <span>{errors.firstname.message}</span>}
+            {errors.firstname && <p className={styles.error__message}>{errors.firstname.message}</p>}
           </div>
           <div className={styles.contactform__lastname}>
             <label htmlFor="lastname">Last Name<span id={styles.form__required}> *</span></label>
@@ -37,7 +37,7 @@ const ContactForm = () => {
               {...register("lastname", { required: "This field is required" })}
               required
             />
-            {errors.lastname && <span>{errors.lastname.message}</span>}
+            {errors.lastname && <p className={styles.error__message}>{errors.lastname.message}</p>}
           </div>
         </div>
 
@@ -56,7 +56,7 @@ const ContactForm = () => {
             })}
             required
           />
-          {errors.email && <span>{errors.email.message}</span>}
+          {errors.email && <p className={styles.error__message}>{errors.email.message}</p>}
         </div>
 
         <div className={styles.contactform__query}>
@@ -72,8 +72,9 @@ const ContactForm = () => {
             <input type="radio" name="query" value="Support Request" {...register("query")} />
             <label htmlFor="supportrequest">Support Request</label>
           </div>
-          {errors.query && <span>{errors.query.message}</span>}
+          
           </div>
+          {errors.query && <p className={styles.error__message}>{errors.query.message}</p>}
 
         </div>
 
@@ -87,10 +88,11 @@ const ContactForm = () => {
             {...register("message", { required: "This field is required" })}
             required
           />
-          {errors.message && <span>{errors.message.message}</span>}
+          {errors.message && <p className={styles.error__message}>{errors.message.message}</p>}
         </div>
 
         <div className={styles.contactform__confirm}>
+          <div className={styles.contactform__confirminput}>
           <input
             type="checkbox"
             name="confirm"
@@ -101,7 +103,8 @@ const ContactForm = () => {
           <label htmlFor="confirm">
             I hereby consent to being contacted by the team<span id={styles.form__required}> *</span>
           </label>
-          {errors.confirm && <p>{errors.confirm.message}</p>}
+          </div>
+          {errors.confirm && <p className={styles.error__message}>{errors.confirm.message}</p>}
         </div>
         <button type="submit" onClick={handleSubmit(onSubmit)}>Submit</button>
       
