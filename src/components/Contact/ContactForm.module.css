@@ -129,6 +129,9 @@ button[type="submit"]:hover {
   color: #d7767c;
   font-size: 0.8rem;
 }
+#error__input{
+  border: 1px solid #d7767c;
+}
 @media screen and (max-width: 756px) {
     .contactform__container{
         width: 92%;
