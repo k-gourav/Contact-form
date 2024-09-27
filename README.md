@@ -1,6 +1,12 @@
 # Contact Form
 
-A responsive contact form component that handles form validation and submission with feedback for users. Built with React, this project showcases form validation, accessibility, and smooth user interaction for handling contact inquiries.
+A responsive contact form component that handles form validation and submission with feedback for users. Built with React, this project showcases form validation, accessibility, and smooth user interaction for handling contact inquiries.<br/>
+
+
+![photo-collage png (1)](https://github.com/user-attachments/assets/294a9d7b-9187-4597-9c48-ebddb1934f96)
+
+
+
 
 ## Features
 
