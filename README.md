@@ -20,7 +20,7 @@ A responsive contact form component that handles form validation and submission 
 
 -   React (with Hooks and Form Validation)
 -   Vite (for fast builds)
--   CSS (for responsive styling)
+-   Modular CSS (for responsive styling)
 -   Netlify (for deployment)
 
 ## Installation
