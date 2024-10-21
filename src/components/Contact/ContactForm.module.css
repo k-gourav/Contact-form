@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
 }
-#form__required {
+.form__required {
   color: #7a958c;
 }
 .contactform__container {
@@ -72,12 +72,11 @@
   gap: 0.6rem;
   cursor: pointer;
 }
-.contactform__confirminput{
+.contactform__confirminput {
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
-
 input[type="checkbox"] {
   border-radius: none;
   accent-color: #128570 !important;
@@ -85,15 +84,12 @@ input[type="checkbox"] {
 input[type="radio"] {
   accent-color: #0c7d69;
 }
-/* input[type="radio"]:checked + label {
-    background-color: #e4f4e4;
-} */
 label,
 legend {
   font-size: 0.8rem;
   color: #3c4941;
 }
-input[name] {
+.form__input {
   border-radius: 4px;
   border: 1px solid #d0d5d4;
   padding: 0.5rem 0.8rem;
@@ -102,7 +98,7 @@ input[name] {
   font-family: inherit;
   color: #073129;
 }
-input[name]:focus,
+.form__input:focus,
 textarea:focus {
   border: 1px solid #648c84;
 }
@@ -127,24 +123,29 @@ button[type="submit"] {
 button[type="submit"]:hover {
   background-color: #118e77;
 }
-.error__message{
+.error__message {
   color: #d7767c;
   font-size: 0.8rem;
 }
-#error__input{
+.error__input {
   border: 1px solid #d7767c;
+  border-radius: 4px;
+  padding: 0.5rem 0.8rem;
+  outline: none;
+  cursor: pointer;
+  font-family: inherit;
 }
 @media screen and (max-width: 756px) {
-    .contactform__container{
-        width: 92%;
-    }
+  .contactform__container {
+    width: 92%;
+  }
   .contactform__name {
     flex-direction: column;
   }
   .contactform__firstname,
-.contactform__lastname{
+  .contactform__lastname {
     width: 100%;
-}
+  }
   .contactform__querybox {
     flex-direction: column;
     gap: 0.8rem;
@@ -153,7 +154,7 @@ button[type="submit"]:hover {
   .contactform__querysecond {
     width: 100%;
   }
-  .contactform__confirminput label{
+  .contactform__confirminput label {
     width: 75%;
   }
 }
