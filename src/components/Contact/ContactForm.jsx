@@ -134,7 +134,6 @@ const ContactForm = () => {
             Message<span className={styles.form__required}> *</span>
           </label>
           <textarea
-            type="text"
             name="message"
             rows="3"
             aria-label="Type your message"
