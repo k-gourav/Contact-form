@@ -11,11 +11,11 @@ const ContactForm = () => {
     reset,
     formState: { errors },
   } = useForm();
+  
   const onSubmit = () => {
-    reset();
     setShowModal(true);
+    reset();
   };
-
   return (
     <main className={styles.main__element}>
       <div className={styles.contactform__container}>
@@ -93,6 +93,7 @@ const ContactForm = () => {
                 type="radio"
                 name="query"
                 value="General Enquiry"
+                aria-label="Select General Enquiry"
                 {...register("query", {
                   required: "Please select a query type",
                 })}
@@ -105,6 +106,7 @@ const ContactForm = () => {
                 type="radio"
                 name="query"
                 value="Support Request"
+                aria-label="Select Support Request"
                 {...register("query")}
               />
               <label htmlFor="supportrequest">Support Request</label>
