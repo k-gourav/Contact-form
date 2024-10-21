@@ -8,9 +8,11 @@ const ContactForm = () => {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm();
   const onSubmit = () => {
+    reset();
     setShowModal(true);
   };
 
